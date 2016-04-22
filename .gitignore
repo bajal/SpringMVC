@@ -1,0 +1,6 @@
+.idea
+.gradle
+SpringMVC.iml
+build.gradle settings.gradle
+out
+build

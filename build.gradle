@@ -1,0 +1,19 @@
+group 'com.mohbajal.learnmvc'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'war'
+apply plugin: 'jetty'
+
+sourceCompatibility = 1.5
+webAppDirName = 'WebContent'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'org.springframework:spring-webmvc:4.2.5.RELEASE'
+    compile fileTree(dir: "${webAppDirName}/WEB-INF/lib", include: '*.jar')
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+}
